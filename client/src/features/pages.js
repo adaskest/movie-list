@@ -1,0 +1,1 @@
+import {createSlice} from "@reduxjs/toolkit";export const pagesSlice = createSlice({    name: 'pages',    initialState: {        value: {            pages: ''        }    },    reducers: {        showPage: ({value}, {payload}) => {            value.pages = payload        }    }})export const {showPage} = pagesSlice.actionsexport default pagesSlice.reducer
