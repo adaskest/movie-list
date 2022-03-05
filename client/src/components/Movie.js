@@ -92,6 +92,7 @@ const Movie = () => {
     const disp = useDispatch()
     const {movies} = useSelector(state => state.movies.value)
     const [ratings, setRatings] = useState(0)
+    const [time, setTime] = useState(0)
     const commentRef = useRef()
     const {id} = useParams()
     const userId = localStorage.getItem('secretKey')
@@ -103,13 +104,14 @@ const Movie = () => {
     const movie = movies.find(x => x.id === id)
 
     function addComment() {
-
+        const time = new Date().getTime()
         const comment = {
             com: commentRef.current.value,
             rating: ratings,
+            time
         }
         const newCom = {
-            id: movie.id,
+            movieId: movie.id,
             comment,
             creator: userId
         }

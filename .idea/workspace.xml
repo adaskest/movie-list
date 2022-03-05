@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3746ca03-b997-4470-a6d0-cb123552d134" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/CreateProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/LoginC.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/RegisterC.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/pages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/CreatePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/MoviePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/RegisterPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LoginC.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LoginC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CreatePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CreatePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dataBase/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/dataBase/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middle/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middle/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -58,9 +46,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -88,6 +76,7 @@
       <workItem from="1646307005178" duration="11560000" />
       <workItem from="1646378986038" duration="6028000" />
       <workItem from="1646385040858" duration="728000" />
+      <workItem from="1646477597681" duration="17000" />
     </task>
     <servers />
   </component>
@@ -116,5 +105,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/client" />
+    </ignored-roots>
   </component>
 </project>

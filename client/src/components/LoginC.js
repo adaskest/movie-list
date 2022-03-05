@@ -7,6 +7,7 @@ import {Typography} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {userIn} from "../features/user";
+import {addNotif} from "../features/movies";
 
 
 export default function SignIn() {
@@ -18,10 +19,12 @@ export default function SignIn() {
     const nav = useNavigate()
 
     function login() {
+        const time = new Date().getTime()
 
         const loggin = {
             user: user.current.value,
             pass: pass1.current.value,
+            time
         }
         const options = {
             method: "POST",
@@ -32,8 +35,10 @@ export default function SignIn() {
         fetch('http://localhost:4000/login', options)
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 if (data.success) {
                     disp(userIn(data.message.user))
+                    disp(addNotif(data.message.notifications))
                     localStorage.setItem('secretKey', data.message.id)
                     nav('/')
                 } else {
