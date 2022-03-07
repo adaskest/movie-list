@@ -16,7 +16,7 @@ import {
 import {useDispatch, useSelector} from "react-redux";
 import {createStyles, makeStyles} from '@mui/styles';
 import {createTheme} from "@mui/material/styles";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {showPage} from "../features/pages";
 import {addMovies} from "../features/movies";
 
@@ -92,10 +92,10 @@ const Movie = () => {
     const disp = useDispatch()
     const {movies} = useSelector(state => state.movies.value)
     const [ratings, setRatings] = useState(0)
-    const [time, setTime] = useState(0)
     const commentRef = useRef()
     const {id} = useParams()
     const userId = localStorage.getItem('secretKey')
+    const nav = useNavigate()
 
     useEffect(() => {
         disp(showPage(''))
@@ -104,16 +104,14 @@ const Movie = () => {
     const movie = movies.find(x => x.id === id)
 
     function addComment() {
-        const time = new Date().getTime()
         const comment = {
             com: commentRef.current.value,
             rating: ratings,
-            time
         }
         const newCom = {
             movieId: movie.id,
             comment,
-            creator: userId
+            comCreator: userId
         }
         const options = {
             method: "POST",
@@ -128,8 +126,7 @@ const Movie = () => {
                     disp(addMovies(data.message))
                 }
             })
-        commentRef.current.value = ''
-        setRatings(0)
+        nav('/')
     }
 
     return (

@@ -6,8 +6,7 @@ import Container from '@mui/material/Container';
 import {Typography} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {userIn} from "../features/user";
-import {addNotif} from "../features/movies";
+import {addNotif, userIn} from "../features/user";
 
 
 export default function SignIn() {
@@ -19,24 +18,21 @@ export default function SignIn() {
     const nav = useNavigate()
 
     function login() {
-        const time = new Date().getTime()
-
-        const loggin = {
+        const login = {
             user: user.current.value,
             pass: pass1.current.value,
-            time
         }
         const options = {
             method: "POST",
             headers: {"content-type": "application/json"},
-            body: JSON.stringify(loggin)
+            body: JSON.stringify(login)
         }
 
         fetch('http://localhost:4000/login', options)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 if (data.success) {
+                    console.log(data)
                     disp(userIn(data.message.user))
                     disp(addNotif(data.message.notifications))
                     localStorage.setItem('secretKey', data.message.id)

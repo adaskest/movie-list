@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3746ca03-b997-4470-a6d0-cb123552d134" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/LoginC.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LoginC.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MovieCompon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/CreatePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/CreatePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/dataBase/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/dataBase/data.js" afterDir="false" />
@@ -28,6 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -76,8 +80,19 @@
       <workItem from="1646307005178" duration="11560000" />
       <workItem from="1646378986038" duration="6028000" />
       <workItem from="1646385040858" duration="728000" />
-      <workItem from="1646477597681" duration="17000" />
+      <workItem from="1646477597681" duration="231000" />
+      <workItem from="1646553772107" duration="14896000" />
+      <workItem from="1646656080309" duration="20000" />
+      <workItem from="1646682869816" duration="137000" />
     </task>
+    <task id="LOCAL-00001" summary="Add notifications">
+      <created>1646477703246</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646477703246</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,5 +125,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/client" />
     </ignored-roots>
+    <MESSAGE value="Add notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add notifications" />
   </component>
 </project>

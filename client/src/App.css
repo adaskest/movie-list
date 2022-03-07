@@ -10,3 +10,8 @@
 .wrap {
   flex-wrap: wrap;
 }
+
+.user {
+  display: flex;
+  position: relative;
+}
