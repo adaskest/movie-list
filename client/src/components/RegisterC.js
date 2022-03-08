@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import {Typography} from "@mui/material";
 import {useNavigate} from "react-router-dom";
+import http from "../plugins/http";
 
 const Registration = () => {
 
@@ -20,24 +21,16 @@ const Registration = () => {
             passOne: pass1.current.value,
             passTwo: pass2.current.value,
         }
-        const options = {
-            method: "POST",
-            headers: {"content-type": "application/json"},
-            body: JSON.stringify(user)
-        }
-
-        fetch('http://localhost:4000/register', options)
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    nav('/login')
-                } else {
-                    setError(data.message)
-                    setTimeout(() => {
-                        setError('')
-                    }, 2000)
-                }
-            })
+        http.post(user, 'register').then(data => {
+            if (data.success) {
+                nav('/login')
+            } else {
+                setError(data.message)
+                setTimeout(() => {
+                    setError('')
+                }, 2000)
+            }
+        })
     }
 
     return (

@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3746ca03-b997-4470-a6d0-cb123552d134" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LoginC.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LoginC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MovieCompon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProductsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dataBase/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/dataBase/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middle/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middle/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +70,8 @@
       <workItem from="1646553772107" duration="14896000" />
       <workItem from="1646656080309" duration="20000" />
       <workItem from="1646682869816" duration="137000" />
+      <workItem from="1646683020885" duration="138000" />
+      <workItem from="1646721817293" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Add notifications">
       <created>1646477703246</created>
@@ -92,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646477703246</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Show notifications and display comment.">
+      <created>1646683082904</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646683082904</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +121,7 @@
       <path value="$PROJECT_DIR$/client" />
     </ignored-roots>
     <MESSAGE value="Add notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notifications" />
+    <MESSAGE value="Show notifications and display comment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Show notifications and display comment." />
   </component>
 </project>

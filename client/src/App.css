@@ -1,17 +1,29 @@
-#root {
-  background-color: rgba(9, 9, 9, 0.09);
-  min-height: 100vh;
+body {
+    background-color: rgba(100, 100, 100, .4);
+    min-height: 100vh;
 }
 
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .user {
-  display: flex;
-  position: relative;
+    display: flex;
+    position: relative;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-evenly {
+    justify-content: space-evenly;
+}
+
+input {
+    background-color: white;
 }

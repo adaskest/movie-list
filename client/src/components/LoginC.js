@@ -7,6 +7,7 @@ import {Typography} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {addNotif, userIn} from "../features/user";
+import http from "../plugins/http";
 
 
 export default function SignIn() {
@@ -22,28 +23,19 @@ export default function SignIn() {
             user: user.current.value,
             pass: pass1.current.value,
         }
-        const options = {
-            method: "POST",
-            headers: {"content-type": "application/json"},
-            body: JSON.stringify(login)
-        }
-
-        fetch('http://localhost:4000/login', options)
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    console.log(data)
-                    disp(userIn(data.message.user))
-                    disp(addNotif(data.message.notifications))
-                    localStorage.setItem('secretKey', data.message.id)
-                    nav('/')
-                } else {
-                    setError(data.message)
-                    setTimeout(() => {
-                        setError('')
-                    }, 1000)
-                }
-            })
+        http.post(login, 'login').then(data => {
+            if (data.success) {
+                disp(userIn(data.message.user))
+                disp(addNotif(data.message.notifications))
+                localStorage.setItem('secretKey', data.message.id)
+                nav('/')
+            } else {
+                setError(data.message)
+                setTimeout(() => {
+                    setError('')
+                }, 1000)
+            }
+        })
     }
 
     return (
